@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<!-- Créé par Philippe Bédard-Blanchet le 12 novembre 2023 -->
+<!-- Pour l'entreprise: Construction 4 Frères Inc. -->
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="Keywords" content="Construction, Entrepreneur Général, Accueil">
+    <meta name="Description" content="Construction 4 Frères vous souhaite la Bienvenue!">
+	<meta name="author" content="Philippe Bédard-Blanchet">
+	<meta name="robots" content="index, follow">
+		<title>Accueil | Construction 4 Frères</title>
+		<link rel="stylesheet" href="CSS\stylesindex.css">
+		<link rel="icon" type="image/x-icon" href="CSS\Image\Favicon.png">
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Great+Vibes">
+	<!-- Ajout du lien vers les icônes Ionicons -->
+	<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+	<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+	<script src="#"></script>
+</head>
+<body>
+<header>
+<!-- Début de l'En Tête -->
+<img id="floating-image" src="CSS\Image\LdpTransp.png" alt="Entrepreneur Spécialisé en Rénovation" title="Entrepreneur Spécialisé en Rénovation Résidentiel et Commercial"/>
+<!-- Début du Menu Icones Hamburger -->
+<div id="headerContainer">
+    <div id="myNav" class="overlay">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <div class="overlay-content">
+            <a href="index.html">Accueil</a> 
+            <a href="Services.html">Services</a> 
+            <a href="Contacteznous.html">Contactez-nous</a> 
+            <a href="Temoignages.html">Témoignages</a> 
+            <br>
+            <img src="CSS\Image\CarteTranspMenu.png" alt="Entrepreneur Spécialisé en Rénovation" title="Entrepreneur Spécialisé en Rénovation Résidentiel et Commercial"/>
+        </div>
+    </div>
+    <div id="headerContent">
+        <span class="menu-text" onclick="openNav()"> 
+            <!-- Insérer le code SVG ici -->
+            <svg id="hamburger" class="Header__toggle-svg" viewBox="0 0 60 40">
+                <g stroke="#fff" stroke-width="4" stroke-linecap="round" stroke-linejoin="round">
+                    <path id="top-line" d="M10,10 L50,10 Z"></path>
+                    <path id="middle-line" d="M10,20 L50,20 Z"></path>
+                    <path id="bottom-line" d="M10,30 L50,30 Z"></path>
+                </g>
+            </svg>
+            <!-- Fin du code SVG -->
+        </span>
+    </div>
+</div>
+</header>
+<!-- Fin du Menu Icones Hamburger -->
+<!-- Fin de l'En Tête -->   
+<!-- Début de la Page --> 
+<section>
+  <a target="_blank" class="title-link">Construction 4 Frères</a>
+</section>
+<section class="stage">
+  <figure class="ball">
+    <span class="shadow"></span>
+    <div class="welcome-text">Vous Souhaite la Bienvenue!</div>
+  </figure>
+</section>
+<div class="IntroCentre1">
+<h2 class="Intro">La qualité, l’expertise
+et la sécurité pour vos projets</h2>
+</div>
+<section class="Propos">
+  <img class="Cuisine" src="CSS\Image\Cuisine.jpg" alt="Cuisine">
+    <div class="lineUp">
+  <h2 class="TitrePropos">À Propos</h2>
+  <br>
+	<p class="TextePropos">Tout a commencé dès mon plus jeune âge en faisant des bricoles autour de la maison avec mon père.
+<br>
+	Aussitôt que j’ai touché à un marteau, j’ai su que je voulais en faire mon métier. 
+<br>
+	Ma véritable carrière dans le domaine de la construction a débuté à l’âge de 16 ans en rejoignant l’entreprise pour laquelle mon grand-père a travaillé près de 40 ans comme charpentier-menuisier. 
+<br>
+	C’était un honneur pour moi de reprendre le flambeau.
+<br><br>
+	Après plusieurs années d’expérience dans diverses compagnies, j’ai eu la chance de diriger différents quarts de métier et de peaufiner mes compétences en gestion de projet directement avec les clients. 
+	Ce fut une révélation pour moi.
+<br><br>
+	De cette idée, de ces compétences acquises et surtout de plusieurs années de travail acharnées, est née CONSTRUCTION 4 FRÈRES. Une entreprise en pleine expansion, familiale et humaine qui a le souci d’offrir des services de qualité à ses clients!
+<br><br>
+	Merci de faire partie de mon rêve et au plaisir de vous rencontrer.</p>
+		<p class="Signature">Andy Piano</p>
+</div>
+    <img class="Marteau" src="CSS\Image\Marteau.jpg" alt="Marteau">
+</section>
+<div class="IntroCentre2">
+  <h3 class="custom-button" onclick="redirectToContact()">En Savoir Plus</h3>
+</div>
+<!-- Début du Pied de page -->
+ <footer class="footer">
+    <div class="waves">
+      <div class="wave" id="wave1"></div>
+      <div class="wave" id="wave2"></div>
+      <div class="wave" id="wave3"></div>
+      <div class="wave" id="wave4"></div>
+    </div>
+<ul class="social-icon">
+  <li class="social-icon__item"><a class="social-icon__link" href="https://m.facebook.com/p/Construction-4-freres-100069547163583/">
+      <ion-icon name="logo-facebook"></ion-icon>
+    </a></li>
+  <li class="social-icon__item"><a class="social-icon__link" href="https://www.pes.rbq.gouv.qc.ca/RegistreLicences/Recherche/Resultats/FicheDetenteur?mode=Entreprise&crit=r1TSc6INGEWKtcUK6jcX9%2FEByYB22EJQyiTukjrpiNiBdLFBdmxsUQD5hDhRnpniSWRgQPOq4Oq7AYd4UqvduXNoxS7GrtZarAE5%2FQv2Tj9k9EtXsKZODcycaRS2vCDNPQ6XfEMFITtraZrvf%2BgSWTPlmRIB40jGpiV0%2B7oQUFV46ztXzAYx5%2FSbc%2FqaENTVKkNNoAVMK03gyvfV7n0C8%2FGLAsJvA%2BJ1yMXNEP4EJzvW5zN8TyRjCrHuLJD9d0RtUB4ev8TeYPwjiWC4NxCHnBKEQnbCVuHGUzU7pqVsJaInF9S0vmJSF%2FuzYpJAfI4kP4n5eEw2x4zvHP4VjQwuaCjaKpOZiKOTeuTt4dXRCm%2B0AM7jRJahkx%2BgcRlre9GDJEHZ1K6vlDFF9mji7q%2BZkF%2FecRPM%2FiyKffpZZvNaoaRA6%2Bb6NQno%2BoKELy1Ez3WGXeTfCwnrHrogp4oLluMDfp3v3UO8e4Anjx5g4aNCaTddH7Yfdo3nTDHLKYOcHBd1BLfMs4A8c1RBbOmB1kX9p2%2FWqjC971KoajwhhWHHyfy4afo1A%2BAqacXTpnRWvA0yTqKeeS8YqrUrpqny3VMyyFHUh9FVpPbVTuzFky0IE1PqdfLyKoGhHmOXJ%2BtePFt1EQrBiYXTA10SMBeKVdGYNN1sHag3TY6kAPFcS3eXfCo0ZLeBypZ9uw4N3vLoOMbL&ent=8gZhzH8Wo0KGlKByPLnS0g%3D%3D">
+      <ion-icon name="construct-outline"></ion-icon>
+    </a></li>
+  <li class="social-icon__item"><a class="social-icon__link" href="https://ca.linkedin.com/in/andy-piano-2215b127b">
+      <ion-icon name="logo-linkedin"></ion-icon>
+    </a></li>
+  <li class="social-icon__item"><a class="social-icon__link" href="tel:4384015659">
+      <ion-icon name="call-outline"></ion-icon>
+    </a></li>
+</ul>
+    <ul class="menu">
+      <li class="menu__item"><a class="menu__link" href="index.html">Accueil</a></li>
+      <li class="menu__item"><a class="menu__link" href="Services.html">Services</a></li>
+      <li class="menu__item"><a class="menu__link" href="Contacteznous.html">Contactez-nous</a></li>
+      <li class="menu__item"><a class="menu__link" href="Temoignages.html">Témoignages</a></li>
+    </ul>
+    <p>&copy;2023 Constructions 4 frères | Tous droits réservés</p>
+ </footer>
+<!-- Fin du Pied de page --> 
+
+<script>
+  // Début Script du Menu Icones Hamburger
+  function openNav() {
+    document.getElementById("myNav").style.width = "100%";
+  }
+  function closeNav() {
+    document.getElementById("myNav").style.width = "0%";
+  }
+  // Fin Script du Menu Icones Hamburger
+  
+  
+  // Début Script Bouton "En Savoir Plus"
+    function redirectToContact() {
+    window.location.href = 'Contacteznous.html';
+  }
+  // Fin Script Bouton "En Savoir Plus"
+  
+// Fonction pour lire le message de bienvenue avec un délai de 10 secondes
+function lireBienvenueAvecDelai() {
+    // Vérifier si l'API SpeechSynthesis est prise en charge par le navigateur
+    if ('speechSynthesis' in window) {
+        // Créer l'objet SpeechSynthesisUtterance avec le message de bienvenue
+        var messageBienvenue = new SpeechSynthesisUtterance('Construction 4 Frères Vous Souhaite la Bienvenue!');
+
+        // Définir le délai de 2 secondes (en millisecondes)
+        var delai = 2000; // 2 secondes
+        setTimeout(function () {
+            // Faire parler le message après le délai de 10 secondes
+            speechSynthesis.speak(messageBienvenue);
+        }, delai);
+    } else {
+        // Gérer le cas où l'API n'est pas prise en charge
+        console.log('L\'API SpeechSynthesis n\'est pas prise en charge par votre navigateur.');
+    }
+}
+
+// Événement pour déclencher la fonction lorsque la page est entièrement chargée
+window.addEventListener('load', lireBienvenueAvecDelai);
+
+</script>   
+ </body>
+</html>

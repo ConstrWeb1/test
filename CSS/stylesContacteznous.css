@@ -1,0 +1,458 @@
+/* stylesContacteznous.css */
+
+/* Réinitialisation des styles de base */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Ajouter ces styles pour le conteneur d'en-tête */
+/* Début du Menu Icones Hamburger */
+#headerContainer {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+}
+
+/* Style du contenu d'en-tête */
+#headerContent {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+}
+
+/* Style du texte du menu */
+.menu-text {
+  cursor: pointer;
+  color: #fff;
+}
+
+/* Style des icônes SVG */
+svg {
+  width: 120px;
+}
+
+#top-line,
+#bottom-line,
+#middle-line {
+  transform-box: fill-box;
+  transform-origin: center;
+}
+
+/* Animation des icônes SVG au survol */
+svg:hover #top-line {
+  animation: down-rotate 0.6s ease-out both;
+}
+
+svg:hover #bottom-line {
+  animation: up-rotate 0.6s ease-out both;
+}
+
+svg:hover #middle-line {
+  animation: hide 0.6s ease-out forwards;
+}
+
+/* Animation d'rotation vers le haut */
+@keyframes up-rotate {
+  0% {
+    animation-timing-function: cubic-bezier(0.16, -0.88, 0.97, 0.53);
+    transform: translateY(0px);
+  }
+  30% {
+    transform-origin: center;
+    animation-timing-function: cubic-bezier(0.34, 1.56, 0.64, 1);
+    transform: translateY(-10px);
+  }
+  100% {
+    transform-origin: center;
+    transform: translateY(-10px) rotate(45deg) scale(0.9);
+  }
+}
+
+/* Animation de rotation vers le bas */
+@keyframes down-rotate {
+  0% {
+    animation-timing-function: cubic-bezier(0.16, -0.88, 0.97, 0.53);
+    transform: translateY(0px);
+  }
+  30% {
+    transform-origin: center;
+    animation-timing-function: cubic-bezier(0.34, 1.56, 0.64, 1);
+    transform: translateY(10px);
+  }
+  100% {
+    transform-origin: center;
+    transform: translateY(10px) rotate(-45deg) scale(0.9);
+  }
+}
+
+/* Animation de masquage */
+@keyframes hide {
+  29% {
+    opacity: 1;
+  }
+  30% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+/* Style de l'overlay du menu */
+.overlay {
+  height: 100%;
+  width: 0%;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #626567;
+  overflow-x: hidden;
+  transition: 0.5s;
+}
+
+/* Style du contenu de l'overlay */
+.overlay-content {
+  position: relative;
+  top: 15%;
+  width: 100%;
+  text-align: center;
+  margin-top: 0px;
+  font-family: "Poppins", sans-serif;
+}
+
+/* Style des liens dans l'overlay du menu */
+.overlay a {
+  padding: 15px;
+  text-decoration: none;
+  font-size: 50px;
+  color: #000000;
+  display: block;
+  transition: 0.3s;
+}
+
+.overlay a:hover, .overlay a:focus {
+  color: #FFFFFF;
+}
+
+/* Style du bouton de fermeture de l'overlay */
+.overlay .closebtn {
+  position: absolute;
+  top: 20px;
+  right: 45px;
+  font-size: 100px;
+}
+
+/* Style pour les petits écrans */
+@media screen and (max-height: 450px) {
+  .overlay a {
+    font-size: 20px;
+  }
+  .overlay .closebtn {
+    font-size: 10px;
+    top: 15px;
+    right: 35px;
+  }
+}
+
+/* Style du texte du menu hamburger */
+.menu-text {  
+  font-size: 50px;  
+  cursor: pointer;  
+  color: white;
+}
+/* Fin du Menu Icones Hamburger */
+
+/* Style de l'image en haut à droite */
+#floating-image {
+  position: fixed;
+  top: 10px;
+  right: 10px;
+  width: 100px;
+  height: auto;
+}
+
+/* Image de fond pour le corps de la page */
+body {
+  background-image: url('Image/NousJoindrecover.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;  
+  background-size: 100% 100%;
+}
+
+/* Style de l'image */
+img { 
+  width: 1;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Ajoutez ceci pour centrer le titre "Contactez-nous" */
+.Titredepage {
+    margin: auto;
+	font-family: 'Bungee';
+}
+
+/* Ajoutez ceci pour centrer la section du formulaire */
+section {
+    width: 100%;
+    max-width: 800px; /* Ajustez la largeur maximale en fonction de vos besoins */
+    margin: 20px auto; /* Ajoutez une marge en haut et en bas pour l'espace visuel */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Début du formulaire */
+form {
+    width: 400px;
+    padding: 1em;
+    border: 1px solid #ccc;
+    border-radius: 1em;
+    background-color: #7B7D7D; /* Couleur de fond grise */
+    margin-top: 20px; /* Ajoutez une marge en haut pour l'espace visuel */
+}
+
+/* Texte sur la page */
+.TexteForm {
+    font-family: 'Agbalumo';
+    text-align: center;
+    font-size: 20px;
+    color: #CACFD2; /* Remplacez par votre couleur souhaitée */
+}
+
+.container {
+    max-width: 300px;
+    margin: 20px auto;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+input[type="submit"] {
+    background-color: #4caf50;
+    color: #000000;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: #45a049;
+}
+
+.emergency-checkbox {
+    margin-bottom: 16px;
+    color: #F1C40F; /* Remplacez par votre couleur souhaitée */
+    font-size: 15px; /* Ajustez la taille de la boîte d'urgence selon vos besoins */
+}
+/* Fin du formulaire */
+
+/* Image Intervention */
+.image-container {
+    max-width: 200px;
+	    margin-top: 250px;
+}
+
+.envoyer-btn {
+  /* ... autres styles ... */
+  border-width: 1px;
+  width: 600px;
+  height: 200px;
+  border-radius: 100px;
+  background: #fff;
+  position: absolute;
+  border: 5px solid #6fb07f;
+}
+
+.envoyer-btn > span {
+  font-size: 48px;
+  color: #6fb07f;
+}
+
+.envoyer-btn:focus {
+  /* animation */
+  -webkit-animation: extend 1s ease-in-out;
+  -ms-animation: extend 1s ease-in-out;
+  animation: extend 1s ease-in-out;
+  -webkit-animation-fill-mode: forwards;
+  /* Chrome, Safari, Opera */
+  animation-fill-mode: forwards;
+}
+
+.envoyer-btn:focus > span {
+  /* animation */
+  -webkit-animation: disappear 1s ease-in-out;
+  -ms-animation: disappear 1s ease-in-out;
+  animation: disappear 1s ease-in-out;
+  -webkit-animation-fill-mode: forwards;
+  /* Chrome, Safari, Opera */
+  animation-fill-mode: forwards;
+}
+
+.envoyer-btn:focus > img {
+  /* animation */
+  -webkit-animation: appear 1s ease-in-out;
+  -ms-animation: appear 1s ease-in-out;
+  animation: appear 1s ease-in-out;
+  -webkit-animation-fill-mode: forwards;
+  /* Chrome, Safari, Opera */
+  animation-fill-mode: forwards;
+}
+
+
+
+
+
+
+
+
+
+/* Début du pied de page */
+/* Style du pied de page */
+.footer {
+  position: relative;
+  width: 100%;
+  background: #3586ff;
+  min-height: 100px;
+  padding: 20px 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  filter: grayscale(100%); /* Ajout de la propriété filter pour appliquer l'effet de noir et blanc */
+}
+
+.footer {
+    margin-top: 5%; /* Ajustez la valeur en fonction de l'espace souhaité */
+}
+
+/* Styles pour les icônes sociales et le menu */
+.social-icon,
+.menu {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 5px 0;
+  flex-wrap: wrap;
+}
+
+.social-icon__item,
+.menu__item {
+  list-style: none;
+}
+
+/* Styles des liens des icônes sociales */
+.social-icon__link {
+  font-size: 2rem;
+  color: #fff;
+  margin: 0 10px;
+  display: inline-block;
+  transition: 0.5s;
+}
+
+.social-icon__link:hover {
+  transform: translateY(-10px);
+}
+
+/* Styles des liens du menu */
+.menu__link {
+  font-size: 1.2rem;
+  color: #fff;
+  margin: 10px;
+  display: inline-block;
+  transition: 0.5s;
+  text-decoration: none;
+  opacity: 0.75;
+  font-weight: 300;
+}
+
+.menu__link:hover {
+  opacity: 1;
+}
+
+/* Styles des ondes animées du pied de page */
+.wave {
+  position: absolute;
+  top: -100px;
+  left: 0;
+  width: 100%;
+  height: 100px;
+  background: url("https://i.ibb.co/wQZVxxk/wave.png");
+  background-size: 1000px 100px;
+  filter: grayscale(100%); /* Ajout de la propriété filter pour appliquer l'effet de noir et blanc */
+}
+
+.wave#wave1 {
+  z-index: 1000;
+  opacity: 1;
+  bottom: 0;
+  animation: animateWaves 4s linear infinite;
+}
+
+.wave#wave2 {
+  z-index: 999;
+  opacity: 0.5;
+  bottom: 10px;
+  animation: animate 4s linear infinite !important;
+}
+
+.wave#wave3 {
+  z-index: 1000;
+  opacity: 0.2;
+  bottom: 15px;
+  animation: animateWaves 3s linear infinite;
+}
+
+.wave#wave4 {
+  z-index: 999;
+  opacity: 0.7;
+  bottom: 20px;
+  animation: animate 3s linear infinite;
+}
+
+/* Animation des ondes */
+@keyframes animateWaves {
+  0% {
+    background-position-x: 1000px;
+  }
+  100% {
+    background-position-x: 0px;
+  }
+}
+
+@keyframes animate {
+  0% {
+    background-position-x: -1000px;
+  }
+  100% {
+    background-position-x: 0px;
+  }
+}
+
+.wave {
+  /* ... autres styles ... */
+  opacity: 1;
+  visibility: visible;
+}
+
+.footer.menu-opened .wave {
+  opacity: 0;
+  visibility: hidden;
+}

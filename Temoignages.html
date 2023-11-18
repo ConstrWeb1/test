@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<!-- Créé par Philippe Bédard-Blanchet le 12 novembre 2023 -->
+<!-- Pour l'entreprise: Construction 4 Frères Inc. -->
+<html lang="fr">
+<head>	
+	<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="Keywords" content="Construction, Entrepreneur Général, Accueil">
+    <meta name="Description" content="Construction 4 Frères vous souhaite la Bienvenue!">
+	<meta name="author" content="Philippe Bédard-Blanchet">
+	<meta name="robots" content="index, follow">
+		<title>Témoignages | Construction 4 Frères</title>
+		<link rel="stylesheet" href="CSS\stylesTemoignages.css">
+		<link rel="icon" type="image/x-icon" href="CSS\Image\Favicon.png">
+	<!-- Ajout du lien vers les icônes Ionicons -->
+	<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+	<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+	<script src="#"></script>
+</head>
+<body>
+<header>
+<!-- Début de l'En Tête -->
+    <img id="floating-image" src="CSS\Image\LdpTransp.png" alt="Entrepreneur Spécialisé en Rénovation" title="Entrepreneur Spécialisé en Rénovation Résidentiel et Commercial"/>
+    <!-- Début du Menu Icones Hamburger -->
+<div id="headerContainer">
+    <div id="myNav" class="overlay">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <div class="overlay-content">
+            <a href="index.html">Accueil</a> 
+            <a href="Services.html">Services</a> 
+            <a href="Contacteznous.html">Contactez-nous</a> 
+            <a href="Temoignages.html">Témoignages</a> 
+            <br>
+            <img src="CSS\Image\CarteTranspMenu.png" alt="Entrepreneur Spécialisé en Rénovation" title="Entrepreneur Spécialisé en Rénovation Résidentiel et Commercial"/>
+        </div>
+    </div>
+        <div id="headerContent">
+            <span class="menu-text" onclick="openNav()"> 
+                <!-- Insérer le code SVG ici -->
+                <svg id="hamburger" class="Header__toggle-svg" viewBox="0 0 60 40">
+                    <g stroke="#fff" stroke-width="4" stroke-linecap="round" stroke-linejoin="round">
+                        <path id="top-line" d="M10,10 L50,10 Z"></path>
+                        <path id="middle-line" d="M10,20 L50,20 Z"></path>
+                        <path id="bottom-line" d="M10,30 L50,30 Z"></path>
+                    </g>
+                </svg>
+                <!-- Fin du code SVG -->
+            </span>
+        </div>
+    </div>
+</header>
+<!-- Fin du Menu Icones Hamburger -->
+<!-- Fin de l'En Tête -->
+
+<h1>Nos Témoignages</h1>
+
+<h2>Ce que disent nos clients,</h2>
+
+<div class="testimonial-container">
+  <p class="testimonial-text" id="testimonialText">C'était vraiment un plaisir de travailler avec cette équipe. Leur professionnalisme et leur expertise ont dépassé mes attentes.</p>
+  <p class="testimonial-author" id="testimonialAuthor">- Philippe Bédard-Blanchet, Client satisfait</p>
+  <button class="prev" onclick="changeTestimonial(-1)">❮</button>
+  <button class="next" onclick="changeTestimonial(1)">❯</button>
+</div>
+
+<!-- Début du Pied de page -->
+ <footer class="footer">
+    <div class="waves">
+      <div class="wave" id="wave1"></div>
+      <div class="wave" id="wave2"></div>
+      <div class="wave" id="wave3"></div>
+      <div class="wave" id="wave4"></div>
+    </div>
+<ul class="social-icon">
+  <li class="social-icon__item"><a class="social-icon__link" href="https://m.facebook.com/p/Construction-4-freres-100069547163583/">
+      <ion-icon name="logo-facebook"></ion-icon>
+    </a></li>
+  <li class="social-icon__item"><a class="social-icon__link" href="https://www.pes.rbq.gouv.qc.ca/RegistreLicences/Recherche/Resultats/FicheDetenteur?mode=Entreprise&crit=r1TSc6INGEWKtcUK6jcX9%2FEByYB22EJQyiTukjrpiNiBdLFBdmxsUQD5hDhRnpniSWRgQPOq4Oq7AYd4UqvduXNoxS7GrtZarAE5%2FQv2Tj9k9EtXsKZODcycaRS2vCDNPQ6XfEMFITtraZrvf%2BgSWTPlmRIB40jGpiV0%2B7oQUFV46ztXzAYx5%2FSbc%2FqaENTVKkNNoAVMK03gyvfV7n0C8%2FGLAsJvA%2BJ1yMXNEP4EJzvW5zN8TyRjCrHuLJD9d0RtUB4ev8TeYPwjiWC4NxCHnBKEQnbCVuHGUzU7pqVsJaInF9S0vmJSF%2FuzYpJAfI4kP4n5eEw2x4zvHP4VjQwuaCjaKpOZiKOTeuTt4dXRCm%2B0AM7jRJahkx%2BgcRlre9GDJEHZ1K6vlDFF9mji7q%2BZkF%2FecRPM%2FiyKffpZZvNaoaRA6%2Bb6NQno%2BoKELy1Ez3WGXeTfCwnrHrogp4oLluMDfp3v3UO8e4Anjx5g4aNCaTddH7Yfdo3nTDHLKYOcHBd1BLfMs4A8c1RBbOmB1kX9p2%2FWqjC971KoajwhhWHHyfy4afo1A%2BAqacXTpnRWvA0yTqKeeS8YqrUrpqny3VMyyFHUh9FVpPbVTuzFky0IE1PqdfLyKoGhHmOXJ%2BtePFt1EQrBiYXTA10SMBeKVdGYNN1sHag3TY6kAPFcS3eXfCo0ZLeBypZ9uw4N3vLoOMbL&ent=8gZhzH8Wo0KGlKByPLnS0g%3D%3D">
+      <ion-icon name="construct-outline"></ion-icon>
+    </a></li>
+  <li class="social-icon__item"><a class="social-icon__link" href="https://ca.linkedin.com/in/andy-piano-2215b127b">
+      <ion-icon name="logo-linkedin"></ion-icon>
+    </a></li>
+  <li class="social-icon__item"><a class="social-icon__link" href="tel:4384015659">
+      <ion-icon name="call-outline"></ion-icon>
+    </a></li>
+</ul>
+    <ul class="menu">
+      <li class="menu__item"><a class="menu__link" href="index.html">Accueil</a></li>
+      <li class="menu__item"><a class="menu__link" href="Services.html">Services</a></li>
+      <li class="menu__item"><a class="menu__link" href="Contacteznous.html">Contactez-nous</a></li>
+      <li class="menu__item"><a class="menu__link" href="Temoignages.html">Témoignages</a></li>
+    </ul>
+    <p>&copy;2023 Constructions 4 frères | Tous droits réservés</p>
+ </footer>
+<!-- Fin du Pied de page --> 
+
+<script>
+  // Début Script du Menu Icones Hamburger
+  function openNav() {
+    document.getElementById("myNav").style.width = "100%";
+  }
+  function closeNav() {
+    document.getElementById("myNav").style.width = "0%";
+  }
+  // Fin Script du Menu Icones Hamburger
+
+  
+
+  
+    // Début Script de Bulle
+    const testimonials = [
+    {
+      text: "C'était vraiment un plaisir de travailler avec cette équipe. Leur professionnalisme et leur expertise ont dépassé mes attentes.",
+      author: "- Philippe Bédard-Blanchet, Client satisfait"
+    },
+    {
+      text: "Excellent service client! Réponses rapides et résolution efficace des problèmes.",
+      author: "- Jane Smith, Cliente fidèle"
+    },
+    {
+      text: "Je recommande vivement cette entreprise. Leur engagement envers la qualité est évident dans chaque aspect de leur travail.",
+      author: "- Bob Johnson, Partenaire commercial"
+    }
+  ];
+
+  let currentIndex = 0;
+
+  function changeTestimonial(change) {
+    currentIndex = (currentIndex + change + testimonials.length) % testimonials.length;
+    document.getElementById('testimonialText').innerText = testimonials[currentIndex].text;
+    document.getElementById('testimonialAuthor').innerText = testimonials[currentIndex].author;
+  }
+    // Ajout de la fonction pour le changement automatique toutes les 3 secondes
+let intervalId;
+
+function startInterval() {
+  intervalId = setInterval(function () {
+    changeTestimonial(1);
+  }, 5000); // 3000 millisecondes = 3 secondes
+}
+
+function stopInterval() {
+  clearInterval(intervalId);
+}
+
+// Appeler startInterval() pour commencer le changement automatique
+startInterval();
+
+// Mettre à jour la fonction changeTestimonial pour arrêter et redémarrer l'intervalle
+function changeTestimonial(change) {
+  stopInterval(); // Arrêter l'intervalle pendant le changement
+  currentIndex = (currentIndex + change + testimonials.length) % testimonials.length;
+  document.getElementById('testimonialText').innerText = testimonials[currentIndex].text;
+  document.getElementById('testimonialAuthor').innerText = testimonials[currentIndex].author;
+  startInterval(); // Redémarrer l'intervalle après le changement
+}
+  
+
+  
+</script>
+</body>
+</html>
